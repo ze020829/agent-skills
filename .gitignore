@@ -1,0 +1,4 @@
+.system/
+create-yourself/selves/
+__pycache__/
+*.pyc
