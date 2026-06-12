@@ -74,6 +74,7 @@
 
 | Skill | 用途 |
 | --- | --- |
+| `last30days` | 跨 Reddit/X/YouTube/TikTok/HN/Polymarket 调研任意主题近 30 天真实讨论与热度（v3.3.2，已剔除演示 assets） |
 | `aihot` | 拉取 AI HOT 公开 API，整理当日 AI 圈资讯中文简报 |
 | `create-yourself` | 把聊天记录/日记/照片蒸馏成可运行的"数字自己" |
 | `meihua-yishu` | 梅花易数占卜：起卦、解卦、测字 |
@@ -85,5 +86,5 @@
 | 仓库 | 类型 | 用途 |
 | --- | --- | --- |
 | [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | React 组件库 | 动画/交互 React 组件集（40k+ star），前端实现素材，不是 skill |
-| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 单体 skill | 跨 Reddit/X/YouTube/HN/Polymarket 调研任意主题近 30 天动态 |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 单体 skill | 已于 2026-06-12 安装为本地 `last30days`（安全审查通过，见知识库登记页） |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | skill 集 | Matt Pocock 的工程师 skills 集（126k+ star），按需挑选参考 |
