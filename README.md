@@ -3,7 +3,8 @@
 本目录存放所有自定义 / 第三方 Codex Agent Skills。每个子目录一个 skill，入口为 `SKILL.md`。
 按需检索下表，找到对应功能后阅读该 skill 的 `SKILL.md` 使用。
 
-> 注：`.system/` 为运行时目录，不属于 skill；`create-yourself/selves/` 含个人数据，不随仓库分发。
+> 2026-06-12: taste-skill 仅保留现行 v2（design-taste-frontend），v1 已移除。
+> \u6CE8\uFF1A`.system/` 为运行时目录，不属于 skill；`create-yourself/selves/` 含个人数据，不随仓库分发。
 
 ## 开发流程 / 工程方法（superpowers 系列）
 
@@ -30,7 +31,6 @@
 | --- | --- |
 | `impeccable` | 前端界面设计/重设计/审查/打磨的综合 UX 方法论 |
 | `taste-skill` | 反模板化前端：落地页、作品集、重设计的"去 AI 味"设计 |
-| `taste-skill-v1` | taste-skill 的 v1 旧版，仅为兼容旧项目保留 |
 | `gpt-tasteskill` | 高级 UX/UI + GSAP 滚动动效工程（AIDA 结构、bento 网格） |
 | `soft-skill` | 高端代理公司级设计规范：字体、间距、阴影、卡片、动画 |
 | `redesign-skill` | 升级现有网站/应用到高端质感，不破坏功能 |
@@ -77,3 +77,13 @@
 | `aihot` | 拉取 AI HOT 公开 API，整理当日 AI 圈资讯中文简报 |
 | `create-yourself` | 把聊天记录/日记/照片蒸馏成可运行的"数字自己" |
 | `meihua-yishu` | 梅花易数占卜：起卦、解卦、测字 |
+
+## 外部参考仓库（非本地 skill）
+
+> 以下仓库不是已安装的 skill：react-bits 是组件库；后两个为外部 skill 集，按需挑选引入。
+
+| 仓库 | 类型 | 用途 |
+| --- | --- | --- |
+| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | React 组件库 | 动画/交互 React 组件集（40k+ star），前端实现素材，不是 skill |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 单体 skill | 跨 Reddit/X/YouTube/HN/Polymarket 调研任意主题近 30 天动态 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | skill 集 | Matt Pocock 的工程师 skills 集（126k+ star），按需挑选参考 |
