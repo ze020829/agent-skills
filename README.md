@@ -11,6 +11,10 @@
 - 引入外部 skill 前先做安全审查，结论记入 knowledge-base（global/personal-brain/references/agent-skills-and-frontend-libraries）。
 - 2026-06-12: taste-skill 仅保留现行 v2（design-taste-frontend），v1 已移除。
 
+## 参考 `reference/`
+
+仅收藏快照、不挂运行时（Codex 扫描不到）。每个快照附 `SNAPSHOT.md` 记录上游 commit 与裁剪说明。
+
 ## 集合 `collections/`
 
 | 集合 | 数量 | 状态 | 说明 |
@@ -102,6 +106,6 @@
 
 | 仓库 | 类型 | 用途 |
 | --- | --- | --- |
-| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | React 组件库 | 动画/交互 React 组件集（40k+ star），前端实现素材，不是 skill |
+| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | React 组件库 | 📖 已快照入 `reference/react-bits`（b8f0d67，剔除网站资源后 17MB）。前端实现素材，不是 skill |
 | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 单体 skill | 已于 2026-06-12 安装为本地 `last30days`（安全审查通过，见知识库登记页） |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | skill 集 | Matt Pocock 的工程师 skills 集（126k+ star），按需挑选参考 |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | skill 集 | 📖 已快照入 `reference/mattpocock-skills`（694fa30）。按需挑选提为在用，提用前走安全审查 |
