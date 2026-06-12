@@ -6,14 +6,10 @@
 
 - 仓库本体在 `D:\code\mine\agent-skills`（本仓）；Codex 运行时目录 `C:\Users\admin\.codex\skills\<name>` 仅放 junction 挂载。
 - 启用 skill = 建 junction：`mklink /J C:\Users\admin\.codex\skills\<name> <仓库内路径>`；停用 = 删除该 junction，仓库内容不动。
-- 组件库（如 react-bits）是项目实现素材，不是 skill，不进本仓，只在「外部参考」登记。
+- 分类轴是类型：`collections/` 集合、`standalone/` 单体 skill、`libraries/` 组件库等非 skill 资源；「在用/参考」是状态属性（挂不挂 junction），不是目录层级。
 - 个人数据不入仓：`collections/create-yourself/selves/` 已 gitignore。
 - 引入外部 skill 前先做安全审查，结论记入 knowledge-base（global/personal-brain/references/agent-skills-and-frontend-libraries）。
 - 2026-06-12: taste-skill 仅保留现行 v2（design-taste-frontend），v1 已移除。
-
-## 参考 `reference/`
-
-仅收藏快照、不挂运行时（Codex 扫描不到）。每个快照附 `SNAPSHOT.md` 记录上游 commit 与裁剪说明。
 
 ## 集合 `collections/`
 
@@ -22,6 +18,7 @@
 | `superpowers/` | 14 | ✅ 在用 | 工程方法集：头脑风暴、写计划、TDD、系统化调试、验证后交付、代码审查等 |
 | `understand-anything/` | 8 | ✅ 在用 | 项目理解集：代码库知识图谱、diff 分析、领域提取、上手指南 |
 | `create-yourself/` | 1 | ✅ 在用 | 数字分身集：聊天记录/日记/照片蒸馏为可运行人格（selves/ 个人数据不入仓） |
+| `mattpocock-skills/` | 集 | 📖 参考 | Matt Pocock 工程师 skills 集快照（上游 694fa30）。不挂运行时；提用个别 skill 前走安全审查 |
 
 ### superpowers 明细
 
@@ -102,10 +99,18 @@
 | --- | --- | --- |
 | `meihua-yishu` | ✅ 在用 | 梅花易数占卜：起卦、解卦、测字 |
 
-## 外部参考仓库（非本地 skill）
+## 组件库 `libraries/`
+
+非 skill 的开发资源，仅作实现素材参考，不挂运行时。每个快照附 `SNAPSHOT.md` 记录上游 commit 与裁剪说明。
+
+| 库 | 状态 | 用途 |
+| --- | --- | --- |
+| `react-bits/` | 📖 参考 | React 动画/交互组件集快照（上游 b8f0d67，含 js/ts × css/tailwind 四种变体，剔除网站资源） |
+
+## 上游来源登记
 
 | 仓库 | 类型 | 用途 |
 | --- | --- | --- |
-| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | React 组件库 | 📖 已快照入 `reference/react-bits`（b8f0d67，剔除网站资源后 17MB）。前端实现素材，不是 skill |
-| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 单体 skill | 已于 2026-06-12 安装为本地 `last30days`（安全审查通过，见知识库登记页） |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | skill 集 | 📖 已快照入 `reference/mattpocock-skills`（694fa30）。按需挑选提为在用，提用前走安全审查 |
+| [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | React 组件库 | 快照于 `libraries/react-bits` |
+| [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | 单体 skill | 安装于 `standalone/research/last30days`（安全审查通过，见知识库登记页） |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | skill 集 | 快照于 `collections/mattpocock-skills` |
